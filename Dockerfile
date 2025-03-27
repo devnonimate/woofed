@@ -36,7 +36,6 @@ RUN yarn install --check-files
 # Precompile Rails assets (plus Webpack)
 RUN NODE_OPTIONS=--openssl-legacy-provider bundle exec rake assets:precompile
 
-# Install node dependences
 RUN npm i -g flat
 
 RUN echo "Waiting for postgres to become ready...."
